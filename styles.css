@@ -54,4 +54,24 @@ iframe {
   border: 0;
 }
 
-/* your styles here */
+#background{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin:auto;
+}
+
+.card{
+  align-self: center;
+  padding: 10px 30px;
+  box-sizing:content-box;
+  width: 140px;
+  height: min-content;
+  border-radius: 0 15px 0 15px;
+  border: 1px solid black;
+  background-color: #34344e;
+  color: white;
+  word-wrap: break-word;
+  font-size: x-small;
+  /* inline-size: min-content */
+}
