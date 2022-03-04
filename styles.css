@@ -54,24 +54,78 @@ iframe {
   border: 0;
 }
 
+
+
 #background{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
-  margin:auto;
-}
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    }
 
 .card{
-  align-self: center;
-  padding: 10px 30px;
-  box-sizing:content-box;
-  width: 140px;
-  height: min-content;
-  border-radius: 0 15px 0 15px;
-  border: 1px solid black;
-  background-color: #34344e;
-  color: white;
-  word-wrap: break-word;
-  font-size: x-small;
-  /* inline-size: min-content */
+    padding: 10px 20px;
+    box-sizing:content-box;
+    height: min-content;
+    width: 140px;
+    border-radius: 2px 15px 3px 15px;
+    background-color: #34344e;
+    color: white;
+    font-weight: normal;
+    font-family: 'Quicksand', sans-serif;
 }
+
+.card > p{
+    font-weight:lighter;
+    font-size: x-small;
+    align-self: stretch;
+}
+
+.card > h5{
+    margin: 5px;
+}
+
+.line1{
+    width: 40px;
+    position: relative;
+    border-bottom: 2px solid rgba(58,150,248,255);
+    border-right: 2px solid rgba(58,150,248,255);
+    border-radius: 25px 0 25px 0;
+    margin-bottom: 55px;
+    margin-top: 80px;
+
+}
+.line2{
+    width: 40px;
+    position: relative; 
+    left: -2;
+    border-top: 2px solid rgba(58,150,248,255);
+    border-radius: 25px 0 10px 0;
+    border-left: 2px solid rgba(58,150,248,255);
+    margin-bottom: 230px;
+    margin-top: 25px;
+}
+
+.line3{
+    width: 40px;
+    position: relative;
+    border-bottom: 2px solid rgba(58,150,248,255);
+    border-right: 2px solid rgba(58,150,248,255);
+    border-radius: 25px 0 25px 0;
+    margin-bottom: 110px;
+    margin-top: 50px;
+}
+.line4{
+    width: 40px;
+    position: relative; 
+    left: -2;
+    border-top: 2px solid rgba(58,150,248,255);
+    border-radius: 25px 0 10px 0;
+    border-left: 2px solid rgba(58,150,248,255);
+    margin-bottom: 250px;
+    margin-top: 25px;
+}
+
+/* A lot of trial and error to get the height aligned for one change. It made me sad but overcome with joy when it finally worked!!
+This codepen was helpful to give me an idea of how to perform the link between cards https://codepen.io/anon/pen/EWpjpx
+Using h5 as h3 used in header and it seems to line up with the figma
+Wrapping card exercise in background div for flexbox implementation */
